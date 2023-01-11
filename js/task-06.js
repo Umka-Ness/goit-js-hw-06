@@ -1,8 +1,8 @@
 const idInput = document.querySelector("#validation-input")
 const dtSet = Number(idInput.dataset.length)
 
-idInput.addEventListener("blur", (even) => {
-    if (even.currentTarget.value.length === dtSet) {
+idInput.addEventListener("blur", (event) => {
+    if (event.currentTarget.value.length === dtSet) {
         idInput.classList.add("invalid")
         idInput.classList.replace("invalid","valid")
     }
