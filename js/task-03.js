@@ -15,9 +15,14 @@ const images = [
 
 const imgSet = document.querySelector(".gallery")
 const galleryes = images.map(elem => `<img src = "${elem.url} alt = "${elem.alt} width="350" height="300"></img>`).join("")
-imgSet.insertAdjacentHTML("beforeend",galleryes)
+imgSet.insertAdjacentHTML("beforeend", galleryes)
+
+imgSet.style.display = "flex"
+imgSet.style.flexDirection = "column"
+
 
 const ulChildren = imgSet.children
+
 for (const i of ulChildren) {
   i.style.margin = "10px"
 }
