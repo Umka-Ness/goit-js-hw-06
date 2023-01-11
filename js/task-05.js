@@ -3,7 +3,7 @@ const text = document.querySelector("span#name-output")
 
 const replases = (elem) => {
     console.log(1)
-    return text.textContent = elem.currentTarget.value || "awaw"
+    return text.textContent = elem.currentTarget.value || "Anonymous"
 }
 
 events.addEventListener("input",replases)
