@@ -14,11 +14,12 @@ const images = [
 ];
 
 const imgSet = document.querySelector(".gallery")
-const galleryes = images.map(elem => `<img src = "${elem.url} alt = "${elem.alt} width="350" height="300"></img>`).join("")
+const galleryes = images.map(elem => `<li><img src = "${elem.url} alt = "${elem.alt} width="350" height="300"></img></li>`).join("")
 imgSet.insertAdjacentHTML("beforeend", galleryes)
 
 imgSet.style.display = "flex"
 imgSet.style.flexDirection = "column"
+imgSet.style.listStyle = "none";
 
 
 const ulChildren = imgSet.children
