@@ -1,19 +1,18 @@
 const form = document.querySelector(".login-form")
 
-
-
-function inputForm(e) {
-    e.preventDefault()
-    console.log(e)
+function inputForm(event) {
+    event.preventDefault()
+    console.log(event)
     const {
         elements: { email, password }
-      } = e.currentTarget;
+      } = event.currentTarget;
     if(email.value ==='' || password.value === '') {
         alert("Заполните все поля для ввода!")
     }
     else {
         console.log(`Email: ${email.value} Password: ${password.value}`)
-        e.currentTarget.reset();
+        event.currentTarget.reset();
     }
 }
+
 form.addEventListener("submit",inputForm)
