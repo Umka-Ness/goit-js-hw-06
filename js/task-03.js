@@ -30,4 +30,3 @@ for (const i of ulChildren) {
   i.style.margin = "10px"
 }
 
- console.log(galleryes)
