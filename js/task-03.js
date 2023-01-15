@@ -26,8 +26,5 @@ imgSet.style.listStyle = "none";
 
 const ulChildren = imgSet.children
 
-for (const i of ulChildren) {
-  i.style.margin = "10px"
-}
 
 

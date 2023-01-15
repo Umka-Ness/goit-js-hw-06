@@ -7,7 +7,15 @@ const ingredients = [
   'Condiments',
 ];
 
-const idIng = document.querySelector("#ingredients")
 
-const createLi = ingredients.map(elem => `<li>${elem}</li>`).join("")
-idIng.innerHTML = createLi
+const list = document.querySelector('#ingredients')
+const liArray = []
+
+ingredients.forEach(ingredient => {
+	const item = document.createElement('li')
+	item.className = 'item'
+	item.textContent = ingredient
+	liArray.push(item)
+})
+
+list.append(...liArray)
