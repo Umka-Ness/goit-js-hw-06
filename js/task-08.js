@@ -8,7 +8,6 @@ function inputForm(event) {
         alert("Заполните все поля для ввода!")
     }
     else {
-        // console.log(`Email: ${email.value} Password: ${password.value}`)
         const ObjData = {email: `${email.value}`, password: `${password.value}`}
         console.log(ObjData)
         event.currentTarget.reset();
