@@ -12,3 +12,19 @@ const setColor = () => {
   spanColor.textContent = color
 }
 btn.addEventListener("click",setColor)
+
+
+// const collorButtonEl = document.querySelector('.change-color');
+// const spanCollorEl = document.querySelector('.color');
+
+// const colorConstEl = () => {
+//   spanCollorEl.textContent = funEl
+//   document.body.style.background = funEl
+// }
+
+// const funEl = getRandomHexColor();
+// const getRandomHexColor=() => {
+//   return #${Math.floor(Math.random() * 16777215).toString(16)};
+// }
+
+// collorButtonEl.addEventListener('click', colorConstEl)
